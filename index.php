@@ -1,17 +1,7 @@
 <?php 
-$email = $_POST["email"] ?? "";
 
+require_once __DIR__ . "/utilities.php";
 
-
-function chekEmail($mail){
-    
-    if(str_contains($mail, "@") && str_contains($mail, ".")){
-        return true;
-    }else{
-        return false;
-    };
-
-};
 
 ?>
 
