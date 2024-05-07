@@ -13,15 +13,17 @@ require_once __DIR__ . "/utilities.php";
     <title>Newsletter</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
-<body>
-    <form action="index.php" method="POST" class="container p-3">
-        <p>
-            <label for="email">Iscriviti alla nostra newsletter</label>
-            <input type="email" name="email" placeholder="Inserisci la tua email">
-        </p>
-        <button>Invia</button>
-    </form>
-    <div class="container p-3">
+<body class="bg-primary">
+    <div class="container p-4 mt-5 border border-bottom-0 border-info border-4">
+        <form action="index.php" method="POST">
+            <p>
+                <label for="email" class="fw-bold me-3 text-white">Iscriviti alla nostra newsletter</label>
+                <input type="email" name="email" placeholder="Inserisci la tua email">
+            </p>
+            <button class="btn btn-info rounded px-4 mt-4 fw-bold text-white">Invia</button>
+        </form>
+    </div>
+    <div class="container p-4 border border-top-0 border-info border-4">
         <?php
         if($email === ""){ 
         ?>
